@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace;
+  font-size: calc(1ch + 2vmin + 3vmax);
+  line-height: 1.618;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  float: right;
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+  margin: 1rem 1ch;
+}
+
+nav a {
+  margin-right: auto;
+}
+
+p {
+  float: right;
+  margin: 1em;
+}
+
+article {
+  display: flow-root;
+  margin: auto;
+}
+
+@media (orientation: portrait) {
+  .just { transform: rotate(180deg) }
+  .vera { writing-mode: vertical-rl }
+}
+
+:nth-child(even) {
+  text-decoration-style: double;
+}
+
+:focus {
+  outline-style: dotted;
+  outline-width: thick;
+  text-decoration-style: dotted;
+}
+
+:hover {
+  text-decoration-style: double;
+}

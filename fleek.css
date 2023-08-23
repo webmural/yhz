@@ -1,0 +1,23 @@
+::selection {
+  background: coral;
+  color: navy;
+}
+
+:root {
+  color: indigo;
+  background-color: skyblue;
+  background-image: linear-gradient(powderblue, skyblue);
+}
+
+:any-link {
+  color: inherit;
+  text-decoration-color: darkviolet;
+}
+
+:focus {
+  outline-color: indigo;
+  text-shadow:
+    -5vw 0 0,
+    3vw 1vh 0,
+    3vw -1vh 0;
+}
